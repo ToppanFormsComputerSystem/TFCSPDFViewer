@@ -163,7 +163,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -183,12 +182,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-
-
-SWIFT_CLASS("_TtC14TFCSPDFZViewer10NiceLogger")
-@interface NiceLogger : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+SWIFT_CLASS("_TtC14TFCSPDFZViewer13TFCSPDFZViewr")
+@interface TFCSPDFZViewr : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #if __has_attribute(external_source_symbol)

@@ -1,0 +1,11 @@
+framework module TFCSPDFZViewer {
+  umbrella header "TFCSPDFZViewer.h"
+
+  export *
+  module * { export * }
+}
+
+module TFCSPDFZViewer.Swift {
+    header "TFCSPDFZViewer-Swift.h"
+    requires objc
+}
